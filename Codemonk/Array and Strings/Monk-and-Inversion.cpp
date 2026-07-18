@@ -16,19 +16,19 @@ int main(){
                 cin>>arr[j][k];
             }
         }
-    }
-    int count = 0;
+        int count = 0;
 
-    for(int i = 0;i<num;i++){
-        for(int j = 0;j<num;j++){
-            for(int k = i;k<num;k++){
-                for(int l = j;l<num;l++){
-                    if(arr[i][j]>arr[k][l]){
-                        count++;
+        for(int i = 0;i<num;i++){
+            for(int j = 0;j<num;j++){
+                for(int k = i;k<num;k++){
+                    for(int l = j;l<num;l++){
+                        if(arr[i][j]>arr[k][l]){
+                            count++;
+                        }
                     }
                 }
             }
         }
+        cout << count << endl;
     }
-    cout << count << endl;
 }
