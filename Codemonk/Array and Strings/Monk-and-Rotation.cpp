@@ -7,6 +7,7 @@ int main() {
 	for(int i = 0;i<num;i++){
 		int a,b;
 		cin>>a>>b;
+		b %= a;
 		vector<int>arr;
 		for(int j = 0;j<a;j++){
 			int n;
